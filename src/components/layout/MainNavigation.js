@@ -4,8 +4,8 @@ import "./MainNavigation.scss";
 
 function MainNavigation() {
   return (
-    <header>
-      <div>Bartending Guide</div>
+    <header className="header">
+      <div className="logo">Bartending Recipes</div>
       <nav>
         <ul>
           <li>
