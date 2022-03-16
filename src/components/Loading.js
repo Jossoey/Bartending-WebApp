@@ -1,7 +1,12 @@
+import '../components/Loader.scss';
+
 function Loading() {
   return (
-    <div>
-      <h1>Loading</h1>
+    <div className="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   );
 }
