@@ -5,7 +5,9 @@ import "./MainNavigation.scss";
 function MainNavigation() {
   return (
     <header className="header">
-      <div className="logo">Bartending Recipes</div>
+      <Link to="/">
+        <div className="logo">Bartending Recipes</div>
+      </Link>
       <nav>
         <ul>
           <li>

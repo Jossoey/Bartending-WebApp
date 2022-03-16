@@ -1,4 +1,4 @@
-@import "../ui/colors";
+@import "../ui/variables.scss";
 
 .header {
   width: 100%;
@@ -6,12 +6,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $tertiary-peach;
+  background-color: $primary-red;
   padding: 0 1rem;
+  border-bottom: 3px solid $primary-dark-color;
 
   .logo {
     font-size: 25px;
-    color: $secondary-brown;
+    color: $tertiary-peach;
     font-weight: bold;
   }
 
@@ -30,13 +31,13 @@
   a {
     text-decoration: none;
     font-size: 18px;
-    color: $secondary-brown;
+    color: $tertiary-peach;
     font-weight: 550;
 
     &:hover,
     :active,
     .active {
-      color: $primary-brown;
+      color: $primary-peach;
     }
   }
 }

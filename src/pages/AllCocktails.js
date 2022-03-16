@@ -1,8 +1,12 @@
+import CocktailList from '../components/cocktails/CocktailList';
+import SearchForm from '../components/SearchForm';
+
 function AllCocktailsPage() {
   return (
-    <div>
-      <h1>All Cocktails</h1>
-    </div>
+    <section>
+      <SearchForm />
+      <CocktailList />
+    </section>
   );
 }
 

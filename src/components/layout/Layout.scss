@@ -1,5 +1,48 @@
+@import "../ui/variables.scss";
+
 .main {
   margin: 3rem auto;
   width: 90%;
   max-width: 40rem;
+}
+
+section {
+  padding: 5rem 0;
+  width: $primary-max-width;
+  max-width: $primary-small-width;
+  margin: 0 auto;
+
+  .section-title {
+    font-size: 25px;
+    letter-spacing: $primary-letter-spacing;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+  }
+
+  .section-description {
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: justify;
+  }
+}
+
+.btn-primary {
+  letter-spacing: $secondary-letter-spacing;
+  color: $secondary-brown;
+  border: 2px solid $primary-brown;
+  padding: 0.45rem 0.8rem;
+  transition: $primary-transition;
+  cursor: pointer;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 42%;
+
+  &:hover {
+    background-color: $tertiary-red;
+    color: $tertiary-peach;
+  }
 }

@@ -1,4 +1,4 @@
-import "./Layout.scss";
+import "./Layout";
 import MainNavigation from "./MainNavigation";
 
 function Layout(props) {
