@@ -6,7 +6,7 @@ const searchRandom = "www.thecocktaildb.com/api/json/v1/1/random.php";
 
 const AppContext = createContext();
 
-function AppProvider({ children }) {
+export function AppProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("a");
   const [loadedCocktails, setLoadedCocktails] = useState([]);
@@ -22,4 +22,4 @@ export const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
-export default AppProvider;
+export default AppContext;

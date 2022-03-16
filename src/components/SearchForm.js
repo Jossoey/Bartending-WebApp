@@ -1,8 +1,8 @@
 import React from "react";
-import { useGlobalContext } from '../store/context'
+import { useGlobalContext } from "../store/context";
 
 function SearchFrom() {
-  // const { setSearchTerm } = useGlobalContext();
+  const { setSearchTerm } = useGlobalContext();
 
   return (
     <div>
