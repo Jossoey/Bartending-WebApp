@@ -1,0 +1,19 @@
+@import "../ui/variables.scss";
+
+.section-cocktail-list {
+  all: none;
+  padding: 5rem 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cocktails-center {
+  width: $primary-small-width;
+  margin: 0 auto;
+  max-width: $primary-max-width;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  align-items: start;
+}

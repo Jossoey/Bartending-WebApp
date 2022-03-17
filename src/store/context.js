@@ -16,7 +16,7 @@ export function AppProvider({ children }) {
     try {
       const response = await fetch(`${searchByName}${searchTerm}`);
       const data = await response.json();
-      console.log(response);
+      // console.log(response);
       const { drinks } = data;
       if (drinks !== null) {
         const newCocktails = drinks.map((item) => {
@@ -33,7 +33,7 @@ export function AppProvider({ children }) {
           };
         });
         setLoadedCocktails(newCocktails);
-        console.log(newCocktails);
+        // console.log(newCocktails);
       } else {
         setLoadedCocktails([]);
       }

@@ -1,0 +1,12 @@
+@import "../ui/variables.scss";
+
+.card {
+  background-color: white;
+  margin-bottom: 2rem;
+  box-shadow: $primary-shadow;
+  transition: $primary-transition;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: $primary-border-radius;
+  width: $secondary-max-width;
+}

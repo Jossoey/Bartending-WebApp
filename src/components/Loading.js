@@ -1,4 +1,4 @@
-import '../components/Loader.scss';
+import './Loader.scss';
 
 function Loading() {
   return (

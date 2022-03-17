@@ -9,6 +9,9 @@
   background-color: $primary-red;
   padding: 0 1rem;
   border-bottom: 3px solid $primary-dark-color;
+  position: sticky;
+	top: 0;
+  z-index: 40;
 
   .logo {
     font-size: 25px;

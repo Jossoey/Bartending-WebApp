@@ -1,0 +1,26 @@
+@import "../ui/variables.scss";
+
+img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: $primary-border-radius;
+  border-top-right-radius: $primary-border-radius;
+}
+
+.cocktail-footer {
+  padding: 1.5rem;
+  h3,
+  h4,
+  p {
+    margin-bottom: 0.3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: $primary-dark-color;
+    margin-bottom: 0.5rem;
+  }
+}

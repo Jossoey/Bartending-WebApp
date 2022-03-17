@@ -1,9 +1,7 @@
-function Card() {
-  return (
-    <div>
-      <h1>Card</h1>
-    </div>
-  );
+import './Card.scss';
+
+function Card(props) {
+  return <div className="card">{props.children}</div>;
 }
 
 export default Card;
