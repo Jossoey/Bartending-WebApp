@@ -20,7 +20,7 @@ export function AppProvider({ children }) {
       const { drinks } = data;
       if (drinks !== null) {
         const newCocktails = drinks.map((item) => {
-          const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass, strInstructions } =
+          const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
             item;
 
           return {
@@ -29,7 +29,6 @@ export function AppProvider({ children }) {
             image: strDrinkThumb,
             info: strAlcoholic,
             glass: strGlass,
-            instruction: strInstructions,
           };
         });
         setLoadedCocktails(newCocktails);

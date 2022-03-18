@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useGlobalContext } from "../store/context";
 
+import './SearchForm.scss';
+
 function SearchFrom() {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = useRef("");
@@ -18,7 +20,7 @@ function SearchFrom() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="form-content">
         <label htmlFor="name">Search Cocktail</label>
         <input
           type="text"

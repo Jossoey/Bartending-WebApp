@@ -1,0 +1,31 @@
+@import "../components/ui/variables.scss";
+
+form {
+  width: 400px;
+//   border: 3px solid $secondary-brown;
+  padding-bottom: 0;
+  margin-bottom: 3rem;
+
+  margin: 0 auto;
+  background: $tertiary-brown;
+  padding: 2rem 2.5rem;
+  border-radius: $primary-border-radius;
+
+  .form-content {
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      letter-spacing: $primary-letter-spacing;
+      color: $tertiary-peach;
+    }
+    input {
+      width: 100%;
+      border: solid 2px $secondary-red;
+      background: $tertiary-peach;
+      border-radius: $primary-border-radius;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
