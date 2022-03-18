@@ -36,7 +36,7 @@ export function AppProvider({ children }) {
       } else {
         setLoadedCocktails([]);
       }
-      // setIsLoading(false);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
       setIsLoading(false);
