@@ -71,33 +71,37 @@ function SingleCocktailPage() {
     const { name, image, category, info, glass, instructions, ingredients } =
       cocktail;
     return (
-      <section>
-        <Link to="/" className="btn-primary">
-          home
-        </Link>
+      <section className="single-cocktail">
         <h2 className="section-title">{name}</h2>
-        <div>
+        <div className="card single-cocktail-card">
           <img src={image} alt={name}></img>
-          <div>
+          <dl className="single-cocktail-description">
             <p>
-              <span>Category:</span> {category}
+              <dt>Category</dt> <dd>: {category}</dd>
             </p>
             <p>
-              <span>Info:</span> {info}
+              <dt>Info</dt> <dd>: {info}</dd>
             </p>
             <p>
-              <span>Glass Type:</span> {glass}
+              <dt>Glass Type</dt> <dd>: {glass}</dd>
             </p>
             <p>
-              <span>Instructions:</span> {instructions}
+              <dt>Instructions</dt> <dd>: {instructions}</dd>
             </p>
             <p>
-              <span>Ingredients:</span>
-              {ingredients.map((item, index) => {
-                return item ? <span key={index}> {item}, </span> : null;
-              })}
+              <dt>Ingredients</dt>
+              <dd>: 
+                {ingredients.map((item, index) => {
+                  return item ? <span key={index}> {item}, </span> : null;
+                })}
+              </dd>
             </p>
-          </div>
+          </dl>
+        </div>
+        <div className="btn">
+          <Link to="/" className="btn-primary">
+            home
+          </Link>
         </div>
       </section>
     );

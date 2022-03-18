@@ -47,3 +47,60 @@ section {
   }
 }
 
+.single-cocktail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+
+  .btn {
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+    .btn-primary {
+      margin: 0;
+      overflow: hidden;
+    }
+  }
+
+  .single-cocktail-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    align-self: center;
+
+    .single-cocktail-description {
+      padding: 1rem 1rem 1rem 3rem;
+      color: $primary-brown;
+
+      dt {
+        display: block;
+        float: left;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      border-top-right-radius: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .single-cocktail-card {
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 999px) {
+    .single-cocktail-card {
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
