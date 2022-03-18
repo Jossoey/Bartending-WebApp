@@ -2,7 +2,7 @@ import './Loader.scss';
 
 function Loading() {
   return (
-    <section>
+    <section className='loader-section'>
       <div className="loader">
         <div></div>
         <div></div>

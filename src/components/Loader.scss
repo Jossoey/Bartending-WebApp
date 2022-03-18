@@ -1,41 +1,47 @@
 @import "../components/ui/variables.scss";
 
-.loader {
-  display: inline-block;
-  position: relative;
-  width: 220px;
-  height: 220px;
-  margin: auto 50%;
+.loader-section {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 
-  div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 8px solid $secondary-red;
-    border-radius: 50%;
-    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: $secondary-red transparent transparent transparent;
+  .loader {
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
 
-    &:nth-child(1) {
-      animation-delay: -0.45s;
-    }
-    &:nth-child(2) {
-      animation-delay: -0.3s;
-    }
-    &:nth-child(3) {
-      animation-delay: -0.15s;
+    div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 8px solid $secondary-red;
+      border-radius: 50%;
+      animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: $secondary-red transparent transparent transparent;
+
+      &:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      &:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      &:nth-child(3) {
+        animation-delay: -0.15s;
+      }
     }
   }
-}
 
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
