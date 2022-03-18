@@ -93,6 +93,12 @@ section {
     .single-cocktail-card {
       flex-direction: row;
       width: 100%;
+
+      img {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+      }
     }
   }
 
