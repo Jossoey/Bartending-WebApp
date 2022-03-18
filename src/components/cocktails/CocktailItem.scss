@@ -8,19 +8,33 @@ img {
 }
 
 .cocktail-footer {
-  padding: 1.5rem;
+  padding: 1rem 2rem;
+  overflow: hidden;
   h3,
   h4,
   p {
     margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
   }
 
   h3 {
-    font-size: 2rem;
+    color: $primary-brown;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    color: $secondary-brown;
   }
 
   p {
     color: $primary-dark-color;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 12px;
+  }
+
+  .btn-details {
+    margin: 0 70%;
   }
 }

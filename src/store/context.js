@@ -2,7 +2,7 @@ import { useState, useContext, createContext, useEffect } from "react";
 import { useCallback } from "react";
 
 const searchByName = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-// const searchRandom = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+const searchRandom = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
 const AppContext = createContext();
 
